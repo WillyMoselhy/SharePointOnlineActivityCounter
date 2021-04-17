@@ -1,0 +1,348 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">PSFramework</S>
+      <S N="Version">1.6.181</S>
+      <S N="Type">Module</S>
+      <S N="Description">General Scripting Framework, providing PowerShell-specific infrastructure for other modules.</S>
+      <S N="Author">Friedrich Weinmann</S>
+      <S N="CompanyName">FWN</S>
+      <S N="Copyright">(c) Friedrich Weinmann 2017. All rights reserved.</S>
+      <DT N="PublishedDate">2021-03-17T07:27:49+02:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/PowershellFrameworkCollective/psframework/blob/master/LICENSE</URI>
+      <URI N="ProjectUri">http://psframework.org/</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>scripting</S>
+          <S>infrastructure</S>
+          <S>logging</S>
+          <S>configuration</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+          <S>Linux</S>
+          <S>Mac</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST>
+                <S>ConvertTo-PSFHashtable</S>
+                <S>Invoke-PSFCallback</S>
+                <S>Invoke-PSFProtectedCommand</S>
+                <S>Remove-PSFNull</S>
+                <S>Select-PSFObject</S>
+                <S>Set-PSFConfig</S>
+                <S>Test-PSFShouldProcess</S>
+                <S>Write-PSFMessage</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>ConvertTo-PSFHashtable</S>
+                <S>Invoke-PSFCallback</S>
+                <S>Invoke-PSFProtectedCommand</S>
+                <S>Remove-PSFNull</S>
+                <S>Select-PSFObject</S>
+                <S>Set-PSFConfig</S>
+                <S>Test-PSFShouldProcess</S>
+                <S>Write-PSFMessage</S>
+                <S>Add-PSFLoggingProviderRunspace</S>
+                <S>Clear-PSFresultCache</S>
+                <S>Compare-PSFArray</S>
+                <S>ConvertFrom-PSFArray</S>
+                <S>ConvertFrom-PSFClixml</S>
+                <S>ConvertTo-PSFClixml</S>
+                <S>Disable-PSFTaskEngineTask</S>
+                <S>Enable-PSFTaskEngineTask</S>
+                <S>Export-PSFClixml</S>
+                <S>Export-PSFConfig</S>
+                <S>Export-PSFModuleClass</S>
+                <S>Get-PSFCallback</S>
+                <S>Get-PSFConfig</S>
+                <S>Get-PSFConfigValue</S>
+                <S>Get-PSFDynamicContentObject</S>
+                <S>Get-PSFFeature</S>
+                <S>Get-PSFFilterCondition</S>
+                <S>Get-PSFFilterConditionSet</S>
+                <S>Get-PSFLicense</S>
+                <S>Get-PSFLocalizedString</S>
+                <S>Get-PSFLoggingProvider</S>
+                <S>Get-PSFLoggingProviderInstance</S>
+                <S>Get-PSFMessage</S>
+                <S>Get-PSFMessageLevelModifier</S>
+                <S>Get-PSFPath</S>
+                <S>Get-PSFPipeline</S>
+                <S>Get-PSFResultCache</S>
+                <S>Get-PSFRunspace</S>
+                <S>Get-PSFScriptblock</S>
+                <S>Get-PSFTaskEngineCache</S>
+                <S>Get-PSFTaskEngineTask</S>
+                <S>Get-PSFTypeSerializationData</S>
+                <S>Get-PSFUserChoice</S>
+                <S>Import-PSFClixml</S>
+                <S>Import-PSFCmdlet</S>
+                <S>Import-PSFConfig</S>
+                <S>Import-PSFLocalizedString</S>
+                <S>Import-PSFLoggingProvider</S>
+                <S>Import-PSFPowerShellDataFile</S>
+                <S>Install-PSFLoggingProvider</S>
+                <S>Invoke-PSFCommand</S>
+                <S>Invoke-PSFFilter</S>
+                <S>Join-PSFPath</S>
+                <S>New-PSFFilter</S>
+                <S>New-PSFFilterCondition</S>
+                <S>New-PSFFilterConditionSet</S>
+                <S>New-PSFLicense</S>
+                <S>New-PSFMessageLevelModifier</S>
+                <S>New-PSFSessionContainer</S>
+                <S>New-PSFSupportPackage</S>
+                <S>Register-PSFCallback</S>
+                <S>Register-PSFConfig</S>
+                <S>Register-PSFConfigSchema</S>
+                <S>Register-PSFConfigValidation</S>
+                <S>Register-PSFFeature</S>
+                <S>Register-PSFLoggingProvider</S>
+                <S>Register-PSFMessageEvent</S>
+                <S>Register-PSFMessageTransform</S>
+                <S>Register-PSFParameterClassMapping</S>
+                <S>Register-PSFRunspace</S>
+                <S>Register-PSFSessionObjectType</S>
+                <S>Register-PSFTaskEngineTask</S>
+                <S>Register-PSFTeppArgumentCompleter</S>
+                <S>Register-PSFTeppScriptblock</S>
+                <S>Register-PSFTypeSerializationData</S>
+                <S>Remove-PSFAlias</S>
+                <S>Remove-PSFConfig</S>
+                <S>Remove-PSFLicense</S>
+                <S>Remove-PSFLoggingProviderRunspace</S>
+                <S>Remove-PSFMessageLevelModifier</S>
+                <S>Reset-PSFConfig</S>
+                <S>Resolve-PSFDefaultParameterValue</S>
+                <S>Resolve-PSFPath</S>
+                <S>Select-PSFConfig</S>
+                <S>Select-PSFPropertyValue</S>
+                <S>Set-PSFDynamicContentObject</S>
+                <S>Set-PSFFeature</S>
+                <S>Set-PSFLoggingProvider</S>
+                <S>Set-PSFPath</S>
+                <S>Set-PSFResultCache</S>
+                <S>Set-PSFScriptblock</S>
+                <S>Set-PSFTaskEngineCache</S>
+                <S>Set-PSFTeppResult</S>
+                <S>Set-PSFTypeAlias</S>
+                <S>Start-PSFRunspace</S>
+                <S>Stop-PSFFunction</S>
+                <S>Stop-PSFRunspace</S>
+                <S>Test-PSFFeature</S>
+                <S>Test-PSFFilter</S>
+                <S>Test-PSFFunctionInterrupt</S>
+                <S>Test-PSFLanguageMode</S>
+                <S>Test-PSFParameterBinding</S>
+                <S>Test-PSFPowerShell</S>
+                <S>Test-PSFTaskEngineCache</S>
+                <S>Test-PSFTaskEngineTask</S>
+                <S>Unregister-PSFCallback</S>
+                <S>Unregister-PSFConfig</S>
+                <S>Wait-PSFMessage</S>
+                <S>Write-PSFHostColor</S>
+                <S>Write-PSFMessageProxy</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Add-PSFLoggingProviderRunspace</S>
+                <S>Clear-PSFresultCache</S>
+                <S>Compare-PSFArray</S>
+                <S>ConvertFrom-PSFArray</S>
+                <S>ConvertFrom-PSFClixml</S>
+                <S>ConvertTo-PSFClixml</S>
+                <S>Disable-PSFTaskEngineTask</S>
+                <S>Enable-PSFTaskEngineTask</S>
+                <S>Export-PSFClixml</S>
+                <S>Export-PSFConfig</S>
+                <S>Export-PSFModuleClass</S>
+                <S>Get-PSFCallback</S>
+                <S>Get-PSFConfig</S>
+                <S>Get-PSFConfigValue</S>
+                <S>Get-PSFDynamicContentObject</S>
+                <S>Get-PSFFeature</S>
+                <S>Get-PSFFilterCondition</S>
+                <S>Get-PSFFilterConditionSet</S>
+                <S>Get-PSFLicense</S>
+                <S>Get-PSFLocalizedString</S>
+                <S>Get-PSFLoggingProvider</S>
+                <S>Get-PSFLoggingProviderInstance</S>
+                <S>Get-PSFMessage</S>
+                <S>Get-PSFMessageLevelModifier</S>
+                <S>Get-PSFPath</S>
+                <S>Get-PSFPipeline</S>
+                <S>Get-PSFResultCache</S>
+                <S>Get-PSFRunspace</S>
+                <S>Get-PSFScriptblock</S>
+                <S>Get-PSFTaskEngineCache</S>
+                <S>Get-PSFTaskEngineTask</S>
+                <S>Get-PSFTypeSerializationData</S>
+                <S>Get-PSFUserChoice</S>
+                <S>Import-PSFClixml</S>
+                <S>Import-PSFCmdlet</S>
+                <S>Import-PSFConfig</S>
+                <S>Import-PSFLocalizedString</S>
+                <S>Import-PSFLoggingProvider</S>
+                <S>Import-PSFPowerShellDataFile</S>
+                <S>Install-PSFLoggingProvider</S>
+                <S>Invoke-PSFCommand</S>
+                <S>Invoke-PSFFilter</S>
+                <S>Join-PSFPath</S>
+                <S>New-PSFFilter</S>
+                <S>New-PSFFilterCondition</S>
+                <S>New-PSFFilterConditionSet</S>
+                <S>New-PSFLicense</S>
+                <S>New-PSFMessageLevelModifier</S>
+                <S>New-PSFSessionContainer</S>
+                <S>New-PSFSupportPackage</S>
+                <S>Register-PSFCallback</S>
+                <S>Register-PSFConfig</S>
+                <S>Register-PSFConfigSchema</S>
+                <S>Register-PSFConfigValidation</S>
+                <S>Register-PSFFeature</S>
+                <S>Register-PSFLoggingProvider</S>
+                <S>Register-PSFMessageEvent</S>
+                <S>Register-PSFMessageTransform</S>
+                <S>Register-PSFParameterClassMapping</S>
+                <S>Register-PSFRunspace</S>
+                <S>Register-PSFSessionObjectType</S>
+                <S>Register-PSFTaskEngineTask</S>
+                <S>Register-PSFTeppArgumentCompleter</S>
+                <S>Register-PSFTeppScriptblock</S>
+                <S>Register-PSFTypeSerializationData</S>
+                <S>Remove-PSFAlias</S>
+                <S>Remove-PSFConfig</S>
+                <S>Remove-PSFLicense</S>
+                <S>Remove-PSFLoggingProviderRunspace</S>
+                <S>Remove-PSFMessageLevelModifier</S>
+                <S>Reset-PSFConfig</S>
+                <S>Resolve-PSFDefaultParameterValue</S>
+                <S>Resolve-PSFPath</S>
+                <S>Select-PSFConfig</S>
+                <S>Select-PSFPropertyValue</S>
+                <S>Set-PSFDynamicContentObject</S>
+                <S>Set-PSFFeature</S>
+                <S>Set-PSFLoggingProvider</S>
+                <S>Set-PSFPath</S>
+                <S>Set-PSFResultCache</S>
+                <S>Set-PSFScriptblock</S>
+                <S>Set-PSFTaskEngineCache</S>
+                <S>Set-PSFTeppResult</S>
+                <S>Set-PSFTypeAlias</S>
+                <S>Start-PSFRunspace</S>
+                <S>Stop-PSFFunction</S>
+                <S>Stop-PSFRunspace</S>
+                <S>Test-PSFFeature</S>
+                <S>Test-PSFFilter</S>
+                <S>Test-PSFFunctionInterrupt</S>
+                <S>Test-PSFLanguageMode</S>
+                <S>Test-PSFParameterBinding</S>
+                <S>Test-PSFPowerShell</S>
+                <S>Test-PSFTaskEngineCache</S>
+                <S>Test-PSFTaskEngineTask</S>
+                <S>Unregister-PSFCallback</S>
+                <S>Unregister-PSFConfig</S>
+                <S>Wait-PSFMessage</S>
+                <S>Write-PSFHostColor</S>
+                <S>Write-PSFMessageProxy</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">https://github.com/PowershellFrameworkCollective/psframework/blob/master/PSFramework/changelog.md</S>
+      <Obj N="Dependencies" RefId="7">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="3">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) Friedrich Weinmann 2017. All rights reserved.</S>
+          <S N="description">General Scripting Framework, providing PowerShell-specific infrastructure for other modules.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes">https://github.com/PowershellFrameworkCollective/psframework/blob/master/PSFramework/changelog.md</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">5950</S>
+          <S N="downloadCount">399098</S>
+          <S N="packageSize">659085</S>
+          <S N="published">3/17/2021 7:27:49 AM +02:00</S>
+          <S N="created">3/17/2021 7:27:49 AM +02:00</S>
+          <S N="lastUpdated">3/21/2021 2:17:51 PM +02:00</S>
+          <S N="tags">scripting infrastructure logging configuration PSEdition_Core PSEdition_Desktop Linux Mac PSModule</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2021-03-21T14:17:51Z</S>
+          <S N="NormalizedVersion">1.6.181</S>
+          <S N="Authors">Friedrich Weinmann</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">PSFramework.nuspec|changelog.md|PSFramework.psd1|PSFramework.psm1|PSFramework.psproj.psbuild|The PSFramework Reliability Promise.md|bin\PSFramework.dll|bin\PSFramework.pdb|bin\PSFramework.xml|bin\readme.md|bin\type-aliases.ps1|bin\type-extensions.ps1|en-us\about_psframework.help.txt|en-us\about_psf_flowcontrol.help.txt|en-us\about_psf_license.help.txt|en-us\about_psf_message.help.txt|en-us\about_psf_resultcache.help.txt|en-us\about_psf_runspace.help.txt|en-us\about_psf_tabexpansion.help.txt|en-us\about_psf_taskengine.help.txt|en-us\PSFramework.dll-Help.xml|en-us\strings.psd1|functions\readme.md|functions\ComputerManagement\Invoke-PSFCommand.ps1|functions\ComputerManagement\New-PSFSessionContainer.ps1|functions\ComputerManagement\Register-PSFSessionObjectType.ps1|functions\configuration\Export-PSFConfig.ps1|functions\configuration\Get-PSFConfig.ps1|functions\configuration\Get-PSFConfigValue.ps1|functions\configuration\Import-PSFConfig.ps1|functions\configuration\Register-PSFConfig.ps1|functions\configuration\Register-PSFConfigSchema.ps1|functions\configuration\Register-PSFConfigValidation.ps1|functions\configuration\Remove-PSFConfig.ps1|functions\configuration\Reset-PSFConfig.ps1|functions\configuration\Select-PSFConfig.ps1|functions\configuration\Unregister-PSFConfig.ps1|functions\feature\Get-PSFFeature.ps1|functions\feature\Register-PSFFeature.ps1|functions\feature\Set-PSFFeature.ps1|functions\feature\Test-PSFFeature.ps1|functions\filter\Get-PSFFilterCondition.ps1|functions\filter\Get-PSFFilterConditionSet.ps1|functions\filter\Invoke-PSFFilter.ps1|functions\filter\New-PSFFilter.ps1|functions\filter\New-PSFFilterCondition.ps1|functions\filter\New-PSFFilterConditionSet.ps1|functions\filter\Test-PSFFilter.ps1|functions\flowcontrol\Get-PSFCallback.ps1|functions\flowcontrol\Get-PSFUserChoice.ps1|functions\flowcontrol\Register-PSFCallback.ps1|functions\flowcontrol\Stop-PSFFunction.ps1|functions\flowcontrol\Test-PSFFunctionInterrupt.ps1|functions\flowcontrol\Test-PSFLanguageMode.ps1|functions\flowcontrol\Test-PSFParameterBinding.ps1|functions\flowcontrol\Test-PSFPowerShell.ps1|functions\flowcontrol\Unregister-PSFCallback.ps1|functions\import\Export-PSFModuleClass.ps1|functions\import\Import-PSFCmdlet.ps1|functions\import\Register-PSFParameterClassMapping.ps1|functions\import\Set-PSFTypeAlias.ps1|functions\license\Get-PSFLicense.ps1|functions\license\New-PSFLicense.ps1|functions\license\Remove-PSFLicense.ps1|functions\localization\Get-PSFLocalizedString.ps1|functions\localization\Import-PSFLocalizedString.ps1|functions\logging\Add-PSFLoggingProviderRunspace.ps1|functions\logging\Get-PSFLoggingProvider.ps1|functions\logging\Get-PSFLoggingProviderInstance.ps1|functions\logging\Import-PSFLoggingProvider.ps1|functions\logging\Install-PSFLoggingProvider.ps1|functions\logging\Register-PSFLoggingProvider.ps1|functions\logging\Remove-PSFLoggingProviderRunspace.ps1|functions\logging\Set-PSFLoggingProvider.ps1|functions\message\Get-PSFMessage.ps1|functions\message\Get-PSFMessageLevelModifier.ps1|functions\message\New-PSFMessageLevelModifier.ps1|functions\message\Register-PSFMessageEvent.ps1|functions\message\Register-PSFMessageTransform.ps1|functions\message\Remove-PSFMessageLevelModifier.ps1|functions\message\Wait-PSFMessage.ps1|functions\message\Write-PSFHostColor.ps1|functions\message\Write-PSFMessageProxy.ps1|functions\meta\Get-PSFPipeline.ps1|functions\resultcache\Clear-PSFresultCache.ps1|functions\resultcache\Get-PSFResultCache.ps1|functions\resultcache\Set-PSFResultCache.ps1|functions\runspace\Get-PSFDynamicContentObject.ps1|functions\runspace\Get-PSFRunspace.ps1|functions\runspace\Register-PSFRunspace.ps1|functions\runspace\Set-PSFDynamicContentObject.ps1|functions\runspace\Start-PSFRunspace.ps1|functions\runspace\Stop-PSFRunspace.ps1|functions\serialization\ConvertFrom-PSFClixml.ps1|functions\serialization\ConvertTo-PSFClixml.ps1|functions\serialization\Export-PSFClixml.ps1|functions\serialization\Get-PSFTypeSerializationData.ps1|functions\serialization\Import-PSFClixml.ps1|functions\serialization\Register-PSFTypeSerializationData.ps1|functions\tabexpansion\Register-PSFTeppArgumentCompleter.ps1|functions\tabexpansion\Register-PSFTeppScriptblock.ps1|functions\tabexpansion\Set-PSFTeppResult.ps1|functions\taskengine\Disable-PSFTaskEngineTask.ps1|functions\taskengine\Enable-PSFTaskEngineTask.ps1|functions\taskengine\Get-PSFTaskEngineCache.ps1|functions\taskengine\Get-PSFTaskEngineTask.ps1|functions\taskengine\Register-PSFTaskEngineTask.ps1|functions\taskengine\Set-PSFTaskEngineCache.ps1|functions\taskengine\Test-PSFTaskEngineCache.ps1|functions\taskengine\Test-PSFTaskEngineTask.ps1|functions\utility\Compare-PSFArray.ps1|functions\utility\ConvertFrom-PSFArray.ps1|functions\utility\Get-PSFPath.ps1|functions\utility\Get-PSFScriptblock.ps1|functions\utility\Import-PSFPowerShellDataFile.ps1|functions\utility\Join-PSFPath.ps1|functions\utility\New-PSFSupportPackage.ps1|functions\utility\Remove-PSFAlias.ps1|functions\utility\Resolve-PSFDefaultParameterValue.ps1|functions\utility\Resolve-PSFPath.ps1|functions\utility\Select-PSFPropertyValue.ps1|functions\utility\Set-PSFPath.ps1|functions\utility\Set-PSFScriptblock.ps1|internal\readme.md|internal\configurations\computermanagement.ps1|internal\configurations\general.ps1|internal\configurations\logging.ps1|internal\configurations\message.ps1|internal\configurations\path.ps1|internal\configurations\runspace.ps1|internal\configurations\serialization.ps1|internal\configurations\utility.ps1|internal\configurationschemata\default.ps1|internal\configurationschemata\metajson.ps1|internal\configurationvalidation\bool.ps1|internal\configurationvalidation\consolecolor.ps1|internal\configurationvalidation\credential.ps1|internal\configurationvalidation\datetime.ps1|internal\configurationvalidation\double.ps1|internal\configurationvalidation\guidarray.ps1|internal\configurationvalidation\integer.ps1|internal\configurationvalidation\integer0to9.ps1|internal\configurationvalidation\integer1to9.ps1|internal\configurationvalidation\integerarray.ps1|internal\configurationvalidation\integerpositive.ps1|internal\configurationvalidation\languagecode.ps1|internal\configurationvalidation\logfilefiletype.ps1|internal\configurationvalidation\long.ps1|internal\configurationvalidation\sizestyle.ps1|internal\configurationvalidation\string.ps1|internal\configurationvalidation\stringarray.ps1|internal\configurationvalidation\timespan.ps1|internal\configurationvalidation\uriabsolute.ps1|internal\filter\environment.filter.ps1|internal\functions\configuration\Convert-PsfConfigValue.ps1|internal\functions\configuration\Read-PsfConfigEnvironment.ps1|internal\functions\configuration\Read-PsfConfigFile.ps1|internal\functions\configuration\Read-PsfConfigPersisted.ps1|internal\functions\configuration\Write-PsfConfigFile.ps1|internal\functions\flowcontrol\Invoke-PsfTerminatingException.ps1|internal\functions\message\Convert-PsfMessageException.ps1|internal\functions\message\Convert-PsfMessageLevel.ps1|internal\functions\message\Convert-PsfMessageTarget.ps1|internal\functions\tabexpansion\New-PSFTeppCompletionResult.ps1|internal\loggingProviders\azureloganalytics.provider.ps1|internal\loggingProviders\console.provider.ps1|internal\loggingProviders\eventlog.provider.ps1|internal\loggingProviders\filesystem.provider.ps1|internal\loggingProviders\gelf.provider.ps1|internal\loggingProviders\logfile.provider.ps1|internal\loggingProviders\splunk.provider.ps1|internal\loggingProviders\sql.provider.ps1|internal\parameters\ComputerParameter.ps1|internal\parameters\readme.md|internal\scriptblocks\filters.validate.ps1|internal\scriptblocks\paths.validate.ps1|internal\scriptblocks\timespan.validate.ps1|internal\scripts\async-logging2.ps1|internal\scripts\cmdlets.ps1|internal\scripts\environment.ps1|internal\scripts\license.ps1|internal\scripts\loadConfigurationPersisted.ps1|internal\scripts\loggingProviderInstanceModuleCode.ps1|internal\scripts\postimport.ps1|internal\scripts\preimport.ps1|internal\scripts\removalEvent.ps1|internal\scripts\sessionRegistration.ps1|internal\scripts\strings.ps1|internal\scripts\taskEngine.ps1|internal\scripts\teppCoreCode.ps1|internal\scripts\teppInputResources.ps1|internal\scripts\variables.ps1|internal\tepp\tepp-assignment.ps1|internal\tepp\scripts\callback-name.ps1|internal\tepp\scripts\config-fullname.ps1|internal\tepp\scripts\config-module.ps1|internal\tepp\scripts\config-name.ps1|internal\tepp\scripts\config-schema.ps1|internal\tepp\scripts\config-validation.ps1|internal\tepp\scripts\dynamiccontentobject-name.ps1|internal\tepp\scripts\encoding.ps1|internal\tepp\scripts\features.ps1|internal\tepp\scripts\filter.ps1|internal\tepp\scripts\input.ps1|internal\tepp\scripts\license-name.ps1|internal\tepp\scripts\localization.ps1|internal\tepp\scripts\logging-provider.ps1|internal\tepp\scripts\message.ps1|internal\tepp\scripts\pathName.ps1|internal\tepp\scripts\psprovider.ps1|internal\tepp\scripts\runspace.ps1|internal\tepp\scripts\scriptblocks.ps1|internal\tepp\scripts\tepp.ps1|internal\tepp\scripts\Unregister-PSFConfig.ps1|snippets\help_par_EnableException.snippet|tests\pester.ps1|tests\readme.md|tests\extensions\BeTrueFOrAll.ps1|tests\extensions\BeTrueForAny.ps1|tests\extensions\HaveProperty.ps1|tests\functions\readme.md|tests\functions\configuration\Export-PSFConfig.Tests.ps1|tests\functions\configuration\Get-PSFConfig.Tests.ps1|tests\functions\configuration\Get-PSFConfigValue.Tests.ps1|tests\functions\configuration\Import-PSFConfig.Tests.ps1|tests\functions\configuration\Register-PSFConfig.Tests.ps1|tests\functions\configuration\Register-PSFConfigValidation.Tests.ps1|tests\functions\configuration\Remove-PSFConfig.Tests.ps1|tests\functions\configuration\Set-PSFConfig.Tests.ps1|tests\functions\configuration\Unregister-PSFConfig.Tests.ps1|tests\functions\logging\providerV2.Tests.ps1|tests\functions\pipeline\Remove-PSFNull.Tests.ps1|tests\functions\tabexpansion\input.Tests.ps1|tests\functions\tabexpansion\teppSystem.Tests.ps1|tests\functions\utility\Select-PSFObject.Tests.ps1|tests\functions\utility\Select-PSFPropertyValue.Tests.ps1|tests\general\FileIntegrity.Exceptions.ps1|tests\general\FileIntegrity.Tests.ps1|tests\general\Help.Exceptions.ps1|tests\general\Help.Tests.ps1|tests\general\manifest.Tests.ps1|tests\general\PSScriptAnalyzer.Tests.ps1|tests\general\strings.Exceptions.ps1|tests\general\strings.Tests.ps1|tests\testdata\configdata.json|xml\PSFramework.Format.ps1xml|xml\PSFramework.Types.ps1xml|xml\readme.md</S>
+          <S N="Cmdlets">ConvertTo-PSFHashtable Invoke-PSFCallback Invoke-PSFProtectedCommand Remove-PSFNull Select-PSFObject Set-PSFConfig Test-PSFShouldProcess Write-PSFMessage</S>
+          <S N="Functions">Add-PSFLoggingProviderRunspace Clear-PSFresultCache Compare-PSFArray ConvertFrom-PSFArray ConvertFrom-PSFClixml ConvertTo-PSFClixml Disable-PSFTaskEngineTask Enable-PSFTaskEngineTask Export-PSFClixml Export-PSFConfig Export-PSFModuleClass Get-PSFCallback Get-PSFConfig Get-PSFConfigValue Get-PSFDynamicContentObject Get-PSFFeature Get-PSFFilterCondition Get-PSFFilterConditionSet Get-PSFLicense Get-PSFLocalizedString Get-PSFLoggingProvider Get-PSFLoggingProviderInstance Get-PSFMessage Get-PSFMessageLevelModifier Get-PSFPath Get-PSFPipeline Get-PSFResultCache Get-PSFRunspace Get-PSFScriptblock Get-PSFTaskEngineCache Get-PSFTaskEngineTask Get-PSFTypeSerializationData Get-PSFUserChoice Import-PSFClixml Import-PSFCmdlet Import-PSFConfig Import-PSFLocalizedString Import-PSFLoggingProvider Import-PSFPowerShellDataFile Install-PSFLoggingProvider Invoke-PSFCommand Invoke-PSFFilter Join-PSFPath New-PSFFilter New-PSFFilterCondition New-PSFFilterConditionSet New-PSFLicense New-PSFMessageLevelModifier New-PSFSessionContainer New-PSFSupportPackage Register-PSFCallback Register-PSFConfig Register-PSFConfigSchema Register-PSFConfigValidation Register-PSFFeature Register-PSFLoggingProvider Register-PSFMessageEvent Register-PSFMessageTransform Register-PSFParameterClassMapping Register-PSFRunspace Register-PSFSessionObjectType Register-PSFTaskEngineTask Register-PSFTeppArgumentCompleter Register-PSFTeppScriptblock Register-PSFTypeSerializationData Remove-PSFAlias Remove-PSFConfig Remove-PSFLicense Remove-PSFLoggingProviderRunspace Remove-PSFMessageLevelModifier Reset-PSFConfig Resolve-PSFDefaultParameterValue Resolve-PSFPath Select-PSFConfig Select-PSFPropertyValue Set-PSFDynamicContentObject Set-PSFFeature Set-PSFLoggingProvider Set-PSFPath Set-PSFResultCache Set-PSFScriptblock Set-PSFTaskEngineCache Set-PSFTeppResult Set-PSFTypeAlias Start-PSFRunspace Stop-PSFFunction Stop-PSFRunspace Test-PSFFeature Test-PSFFilter Test-PSFFunctionInterrupt Test-PSFLanguageMode Test-PSFParameterBinding Test-PSFPowerShell Test-PSFTaskEngineCache Test-PSFTaskEngineTask Unregister-PSFCallback Unregister-PSFConfig Wait-PSFMessage Write-PSFHostColor Write-PSFMessageProxy</S>
+          <S N="GUID">8028b914-132b-431f-baa9-94a6952f21ff</S>
+          <S N="PowerShellVersion">3.0</S>
+          <S N="CompanyName">PowerShell Framework Collective</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Temp\TestModules\AzureFunction\Modules\PSFramework\1.6.181</S>
+    </MS>
+  </Obj>
+</Objs>

@@ -1,0 +1,12 @@
+﻿TOPIC
+	about_UtilityFunctions
+	
+SHORT DESCRIPTION
+	A short synopsis of UtilityFunctions
+
+LONG DESCRIPTION
+	A more detailed description of UtilityFunctions,
+	Should tell the user how to get started with this module.
+	
+KEYWORDS
+	module development debugging

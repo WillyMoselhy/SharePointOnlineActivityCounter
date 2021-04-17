@@ -1,0 +1,161 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">ExchangeOnlineManagement</S>
+      <S N="Version">2.0.4</S>
+      <S N="Type">Module</S>
+      <S N="Description">This is a General Availability (GA) release of Exchange Online PowerShell V2 module. _x000D__x000A_Please check the documentation here - https://aka.ms/exops-docs. _x000D__x000A_For issues related to the module, contact Microsoft support.</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">ExchangeManageabilityTeam</S>
+      <S N="Copyright">(c) 2020 Microsoft. All rights reserved.</S>
+      <DT N="PublishedDate">2021-02-05T09:47:36+02:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">http://aka.ms/azps-license</URI>
+      <Nil N="ProjectUri" />
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Exchange</S>
+          <S>ExchangeOnline</S>
+          <S>EXO</S>
+          <S>EXOV2</S>
+          <S>Mailbox</S>
+          <S>Management</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Connect-ExchangeOnline</S>
+                <S>Connect-IPPSSession</S>
+                <S>Disconnect-ExchangeOnline</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Get-EXOCasMailbox</S>
+                <S>Get-EXOMailbox</S>
+                <S>Get-EXOMailboxFolderPermission</S>
+                <S>Get-EXOMailboxFolderStatistics</S>
+                <S>Get-EXOMailboxPermission</S>
+                <S>Get-EXOMailboxStatistics</S>
+                <S>Get-EXOMobileDeviceStatistics</S>
+                <S>Get-EXORecipient</S>
+                <S>Get-EXORecipientPermission</S>
+                <S>Get-MyAnalyticsFeatureConfig</S>
+                <S>Get-UserBriefingConfig</S>
+                <S>Set-MyAnalyticsFeatureConfig</S>
+                <S>Set-UserBriefingConfig</S>
+                <S>Connect-ExchangeOnline</S>
+                <S>Connect-IPPSSession</S>
+                <S>Disconnect-ExchangeOnline</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Get-EXOCasMailbox</S>
+                <S>Get-EXOMailbox</S>
+                <S>Get-EXOMailboxFolderPermission</S>
+                <S>Get-EXOMailboxFolderStatistics</S>
+                <S>Get-EXOMailboxPermission</S>
+                <S>Get-EXOMailboxStatistics</S>
+                <S>Get-EXOMobileDeviceStatistics</S>
+                <S>Get-EXORecipient</S>
+                <S>Get-EXORecipientPermission</S>
+                <S>Get-MyAnalyticsFeatureConfig</S>
+                <S>Get-UserBriefingConfig</S>
+                <S>Set-MyAnalyticsFeatureConfig</S>
+                <S>Set-UserBriefingConfig</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="4" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="4" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">---------------------------------------------------------------------------------------------_x000D__x000A_Whats new in this release:_x000D__x000A_v2.0.4 :_x000D__x000A_    1. Manage EXO using Linux devices along with Browser based SSO Authentication for enhanced interactive management experience. No need to enter UserName and password everytime you run the PowerShell script._x000D__x000A_    2. Manage EXO using Apple Macintosh devices. Supported versions of Apple MAC OS are Mojave, Catalina &amp; Big Sur. Steps for installing PowerShell on MAC OS is documented here - https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-7.1_x000D__x000A_    3. Real time policy &amp; security enforcement in all user based authentication. Continuous Access Evaluation (CAE) has been enabled in EXO V2 Module. Read more about CAE here - https://techcommunity.microsoft.com/t5/azure-active-directory-identity/moving-towards-real-time-policy-and-security-enforcement/ba-p/1276933_x000D__x000A_    4. Use parameter InlineCredential to pass credentials of Non-MFA accounts on the go without the need of storing credentials in a variable_x000D__x000A_    5. More secure method to fetch access token using safe Reply URLs._x000D__x000A_    6. Breaking change :- Change in cmdlet signature to configure MyAnalytics access for users in your tenant. Get/Set-UserAnalyticsConfig has been replaced by Get/Set-MyAnalyticsFeatureConfig Additionally, you can have more granular controls and configure access at feature level. For more steps read here - https://docs.microsoft.com/en-us/workplace-analytics/myanalytics/setup/configure-myanalytics_x000D__x000A__x000D__x000A_---------------------------------------------------------------------------------------------_x000D__x000A_Previous Releases:_x000D__x000A__x000D__x000A_v2.0.3 :_x000D__x000A_    1. General availability of Certificate Based Authentication feature which enables using Modern Authentication in Unattended Scripting or background automation scenarios._x000D__x000A_    2. Certificate Based Authentication accepts Certificate File directly from terminal thus enabling certificate files to be stored in Azure Key Vault and being fetched Just-In-Time for enhanced security. See parameter Certificate in Connect-ExchangeOnline._x000D__x000A_    3. Connect with Exchange Online and Security Compliance Center simultaneously in a single PowerShell window._x000D__x000A_    4. Ability to restrict the PowerShell cmdlets imported in a session using CommandName parameter, thus reducing memory footprint in case of high usage PowerShell applications._x000D__x000A_    5. Get-ExoMailboxFolderPermission now supports ExternalDirectoryObjectID in the Identity parameter._x000D__x000A_    6. Optimized latency of first V2 Cmdlet call. (Lab results show first call latency has been reduced from 8 seconds to ~1 seconds. Actual results will depend on result size and Tenant environment.)_x000D__x000A__x000D__x000A_v1.0.1 :_x000D__x000A_    1. This is the General Availability (GA) version of EXO PowerShell V2 Module. It is stable and ready for being used in production environments._x000D__x000A_    2. Get-ExoMobileDeviceStatistics cmdlet now supports Identity parameter._x000D__x000A_    3. Improved reliability of session auto-connect in certain cases where script was executing for ~50minutes and threw "Cmdlet not found" error due to a bug in auto-reconnect logic._x000D__x000A_    4. Fixed data-type issues of two commonly used attributed "User" and "MailboxFolderUser" for easy migration of scripts._x000D__x000A_    5. Enhanced support for filters as it now supports 4 more operators - endswith, contains, not and notlike support. Please check online documentation for attributes which are not supported in filter string._x000D__x000A__x000D__x000A_---------------------------------------------------------------------------------------------</S>
+      <Obj N="Dependencies" RefId="7">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="3">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) 2020 Microsoft. All rights reserved.</S>
+          <S N="description">This is a General Availability (GA) release of Exchange Online PowerShell V2 module. _x000D__x000A_Please check the documentation here - https://aka.ms/exops-docs. _x000D__x000A_For issues related to the module, contact Microsoft support.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes">---------------------------------------------------------------------------------------------_x000D__x000A_Whats new in this release:_x000D__x000A_v2.0.4 :_x000D__x000A_    1. Manage EXO using Linux devices along with Browser based SSO Authentication for enhanced interactive management experience. No need to enter UserName and password everytime you run the PowerShell script._x000D__x000A_    2. Manage EXO using Apple Macintosh devices. Supported versions of Apple MAC OS are Mojave, Catalina &amp; Big Sur. Steps for installing PowerShell on MAC OS is documented here - https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-7.1_x000D__x000A_    3. Real time policy &amp; security enforcement in all user based authentication. Continuous Access Evaluation (CAE) has been enabled in EXO V2 Module. Read more about CAE here - https://techcommunity.microsoft.com/t5/azure-active-directory-identity/moving-towards-real-time-policy-and-security-enforcement/ba-p/1276933_x000D__x000A_    4. Use parameter InlineCredential to pass credentials of Non-MFA accounts on the go without the need of storing credentials in a variable_x000D__x000A_    5. More secure method to fetch access token using safe Reply URLs._x000D__x000A_    6. Breaking change :- Change in cmdlet signature to configure MyAnalytics access for users in your tenant. Get/Set-UserAnalyticsConfig has been replaced by Get/Set-MyAnalyticsFeatureConfig Additionally, you can have more granular controls and configure access at feature level. For more steps read here - https://docs.microsoft.com/en-us/workplace-analytics/myanalytics/setup/configure-myanalytics_x000D__x000A__x000D__x000A_---------------------------------------------------------------------------------------------_x000D__x000A_Previous Releases:_x000D__x000A__x000D__x000A_v2.0.3 :_x000D__x000A_    1. General availability of Certificate Based Authentication feature which enables using Modern Authentication in Unattended Scripting or background automation scenarios._x000D__x000A_    2. Certificate Based Authentication accepts Certificate File directly from terminal thus enabling certificate files to be stored in Azure Key Vault and being fetched Just-In-Time for enhanced security. See parameter Certificate in Connect-ExchangeOnline._x000D__x000A_    3. Connect with Exchange Online and Security Compliance Center simultaneously in a single PowerShell window._x000D__x000A_    4. Ability to restrict the PowerShell cmdlets imported in a session using CommandName parameter, thus reducing memory footprint in case of high usage PowerShell applications._x000D__x000A_    5. Get-ExoMailboxFolderPermission now supports ExternalDirectoryObjectID in the Identity parameter._x000D__x000A_    6. Optimized latency of first V2 Cmdlet call. (Lab results show first call latency has been reduced from 8 seconds to ~1 seconds. Actual results will depend on result size and Tenant environment.)_x000D__x000A__x000D__x000A_v1.0.1 :_x000D__x000A_    1. This is the General Availability (GA) version of EXO PowerShell V2 Module. It is stable and ready for being used in production environments._x000D__x000A_    2. Get-ExoMobileDeviceStatistics cmdlet now supports Identity parameter._x000D__x000A_    3. Improved reliability of session auto-connect in certain cases where script was executing for ~50minutes and threw "Cmdlet not found" error due to a bug in auto-reconnect logic._x000D__x000A_    4. Fixed data-type issues of two commonly used attributed "User" and "MailboxFolderUser" for easy migration of scripts._x000D__x000A_    5. Enhanced support for filters as it now supports 4 more operators - endswith, contains, not and notlike support. Please check online documentation for attributes which are not supported in filter string._x000D__x000A__x000D__x000A_---------------------------------------------------------------------------------------------</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">164713</S>
+          <S N="downloadCount">2224410</S>
+          <S N="packageSize">7304172</S>
+          <S N="published">2/5/2021 9:47:36 AM +02:00</S>
+          <S N="created">2/5/2021 9:47:36 AM +02:00</S>
+          <S N="lastEdited">2/10/2021 4:49:45 PM +02:00</S>
+          <S N="lastUpdated">3/19/2021 6:22:40 PM +02:00</S>
+          <S N="tags">Exchange ExchangeOnline EXO EXOV2 Mailbox Management PSModule PSCmdlet_Get-EXOCasMailbox PSCommand_Get-EXOCasMailbox PSCmdlet_Get-EXOMailbox PSCommand_Get-EXOMailbox PSCmdlet_Get-EXOMailboxFolderPermission PSCommand_Get-EXOMailboxFolderPermission PSCmdlet_Get-EXOMailboxFolderStatistics PSCommand_Get-EXOMailboxFolderStatistics PSCmdlet_Get-EXOMailboxPermission PSCommand_Get-EXOMailboxPermission PSCmdlet_Get-EXOMailboxStatistics PSCommand_Get-EXOMailboxStatistics PSCmdlet_Get-EXOMobileDeviceStatistics PSCommand_Get-EXOMobileDeviceStatistics PSCmdlet_Get-EXORecipient PSCommand_Get-EXORecipient PSCmdlet_Get-EXORecipientPermission PSCommand_Get-EXORecipientPermission PSCmdlet_Get-MyAnalyticsFeatureConfig PSCommand_Get-MyAnalyticsFeatureConfig PSCmdlet_Get-UserBriefingConfig PSCommand_Get-UserBriefingConfig PSCmdlet_Set-MyAnalyticsFeatureConfig PSCommand_Set-MyAnalyticsFeatureConfig PSCmdlet_Set-UserBriefingConfig PSCommand_Set-UserBriefingConfig PSIncludes_Cmdlet PSFunction_Connect-ExchangeOnline PSCommand_Connect-ExchangeOnline PSFunction_Connect-IPPSSession PSCommand_Connect-IPPSSession PSFunction_Disconnect-ExchangeOnline PSCommand_Disconnect-ExchangeOnline PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2021-03-19T18:22:40Z</S>
+          <S N="NormalizedVersion">2.0.4</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">ExchangeOnlineManagement.nuspec|ExchangeOnlineManagement.psd1|license.txt|netCore\ExchangeOnlineManagement-Help.xml|netCore\ExchangeOnlineManagement.psm1|netCore\Microsoft.Exchange.Management.AdminApiProvider.dll|netCore\Microsoft.Exchange.Management.ExoPowershellGalleryModule.deps.json|netCore\Microsoft.Exchange.Management.ExoPowershellGalleryModule.dll|netCore\Microsoft.Exchange.Management.RestApiClient.dll|netCore\Microsoft.Exchange.Management.RestApiClient.dll-Help.xml|netCore\Microsoft.Identity.Client.dll|netCore\Microsoft.IdentityModel.JsonWebTokens.dll|netCore\Microsoft.IdentityModel.Logging.dll|netCore\Microsoft.IdentityModel.Tokens.dll|netCore\Microsoft.OData.Client.dll|netCore\Microsoft.OData.Core.dll|netCore\Microsoft.OData.Edm.dll|netCore\Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.dll|netCore\Microsoft.Spatial.dll|netCore\Microsoft.Win32.Registry.AccessControl.dll|netCore\Newtonsoft.Json.dll|netCore\System.Configuration.ConfigurationManager.dll|netCore\System.Diagnostics.PerformanceCounter.dll|netCore\System.IdentityModel.Tokens.Jwt.dll|netCore\System.IO.Abstractions.dll|netCore\System.Management.Automation.dll|netCore\System.Runtime.CompilerServices.Unsafe.dll|netCore\System.Security.Cryptography.Pkcs.dll|netCore\System.Security.Cryptography.ProtectedData.dll|netCore\System.Security.Permissions.dll|netCore\System.Text.Encoding.CodePages.dll|netFramework\Create-SelfSignedCertificate.ps1|netFramework\ExchangeOnlineManagement-Help.xml|netFramework\ExchangeOnlineManagement.psm1|netFramework\Microsoft.Exchange.Management.AdminApiProvider.dll|netFramework\Microsoft.Exchange.Management.ExoPowershellGalleryModule.dll|netFramework\Microsoft.Exchange.Management.RestApiClient.dll|netFramework\Microsoft.Exchange.Management.RestApiClient.dll-Help.xml|netFramework\Microsoft.Identity.Client.dll|netFramework\Microsoft.Identity.Client.xml|netFramework\Microsoft.IdentityModel.Clients.ActiveDirectory.dll|netFramework\Microsoft.IdentityModel.Clients.ActiveDirectory.xml|netFramework\Microsoft.OData.Client.dll|netFramework\Microsoft.OData.Client.xml|netFramework\Microsoft.OData.Core.dll|netFramework\Microsoft.OData.Core.xml|netFramework\Microsoft.OData.Edm.dll|netFramework\Microsoft.OData.Edm.xml|netFramework\Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.dll|netFramework\Microsoft.Spatial.dll|netFramework\Microsoft.Spatial.xml|netFramework\Newtonsoft.Json.dll|netFramework\Newtonsoft.Json.xml|netFramework\System.IO.Abstractions.dll|netFramework\System.Management.Automation.dll</S>
+          <S N="GUID">B5ECED50-AFA4-455B-847A-D8FB64140A22</S>
+          <S N="PowerShellVersion">3.0</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Temp\TestModules\AzureFunction\Modules\ExchangeOnlineManagement\2.0.4</S>
+    </MS>
+  </Obj>
+</Objs>
